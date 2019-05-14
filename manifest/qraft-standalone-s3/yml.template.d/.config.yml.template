@@ -1,0 +1,42 @@
+version: '0.1'
+
+log:
+  level: debug
+  fields:
+    service: registry
+storage:
+  # delete:
+  #   enabled: true
+  cache:
+    blobdescriptor: inmemory
+  s3:
+    accesskey: __S3_ACCESS_KEY__
+    secretkey: __S3_SECRET_KEY__
+    region: __S3_REGION__
+    bucket: __S3_BUCKET__
+    rootdirectory: __S3_ROOT_DIR__
+    encrypt: false
+    secure: false
+    v4auth: true
+    chunksize: 5242880
+  redirect:
+    disable: true
+http:
+  addr: 0.0.0.0:5000
+  headers:
+    X-Content-Type-Options: [nosniff]
+    Access-Control-Allow-Origin: ['*']
+    Access-Control-Allow-Methods: ['HEAD', 'GET', 'OPTIONS', 'DELETE']
+    Access-Control-Allow-Headers: ['Authorization']
+    Access-Control-Max-Age: [1728000]
+    Access-Control-Allow-Credentials: [true]
+    Access-Control-Expose-Headers: ['Docker-Content-Digest']
+health:
+  storagedriver:
+    enabled: true
+    interval: 10s
+    threshold: 3
+auth:
+  htpasswd:
+    realm: basic-realm
+    path: /etc/docker/registry/.htpasswd
