@@ -45,6 +45,9 @@
       registryUI.addTag.dialog.open();
     };
     registryUI.addTag.add = function () {
+      alert("406 허용되지 않은 요청입니다.");
+      registryUI.addTag.close();
+      return;
       if (registryUI.addTag.dialog.getAddServer().length > 0) {
         registryUI.addServer(registryUI.addTag.dialog.getAddServer());
       }

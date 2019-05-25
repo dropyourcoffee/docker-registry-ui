@@ -26,8 +26,10 @@ RUN yarn build
 
 FROM nginx:alpine
 
-LABEL maintainer="Jones MAGLOIRE @Joxit"
+LABEL maintainer="Dexter Jung <dexter.jung@qraftec.com>"
 
 WORKDIR /usr/share/nginx/html/
 
 COPY --from=builder /usr/app/dist/ /usr/share/nginx/html/
+
+EXPOSE 80

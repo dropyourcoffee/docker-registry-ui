@@ -17,7 +17,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 <app>
   <header>
     <material-navbar>
-      <div class="logo">Docker Registry UI</div>
+      <div class="logo"><a href="/" style="text-decoration: none">Qraft Docker Registry</a></div>
       <menu></menu>
     </material-navbar>
   </header>
@@ -32,14 +32,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
   </main>
   <footer>
     <material-footer>
-      <a class="material-footer-logo" href="https://joxit.github.io/docker-registry-ui/">Docker Registry UI
-        %%GULP_INJECT_VERSION%%</a>
+      <a class="material-footer-logo" href="https://joxit.github.io/docker-registry-ui/">Powered by Joxit/Docker Registry UI %%GULP_INJECT_VERSION%%</a>
       <ul class="material-footer-link-list">
         <li>
-          <a href="https://github.com/Joxit/docker-registry-ui">Contribute on GitHub</a>
-        </li>
-        <li>
-          <a href="https://github.com/Joxit/docker-registry-ui/blob/master/LICENSE">Privacy &amp; Terms</a>
+          <a href="https://github.com/dropyourcoffee/docker-registry-ui/blob/master/LICENSE">Privacy &amp; Terms</a>
         </li>
       </ul>
 

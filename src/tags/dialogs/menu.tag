@@ -19,9 +19,9 @@
     <i class="material-icons">more_vert</i>
   </material-button>
   <material-dropdown id="menu-control-dropdown">
-    <p onclick="registryUI.addTag.show(); registryUI.menuTag.close();">Add URL</p>
-    <p onclick="registryUI.changeTag.show(); registryUI.menuTag.close();">Change URL</p>
-    <p onclick="registryUI.removeTag.show(); registryUI.menuTag.close();">Remove URL</p>
+    <p onclick="registryUI.addTag.show(); registryUI.menuTag.close();">저장소 추가</p>
+    <p onclick="registryUI.changeTag.show(); registryUI.menuTag.close();">저장소 변경</p>
+    <p onclick="registryUI.removeTag.show(); registryUI.menuTag.close();">저장소 삭제</p>
   </material-dropdown>
   <div class="overlay" onclick="registryUI.menuTag.close();" show="{ registryUI.menuTag.isOpen && registryUI.menuTag.isOpen() }"></div>
   <script type="text/javascript">

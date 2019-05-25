@@ -10,7 +10,7 @@ S3_CREDENTIAL_FILE=.s3-credentials.csv
 S3_ACCESSKEY=$(tail -n1 $S3_CREDENTIAL_FILE | awk -F ',' '{print $3}')
 S3_SECRETKEY=$(tail -n1 $S3_CREDENTIAL_FILE | awk -F ',' '{print $4}')
 S3_REGION="ap-northeast-2"
-S3_BUCKET="q-container-imgs"
+S3_BUCKET="qcontainer-imgs"
 S3_ROOT_DIR=/registry
 
 

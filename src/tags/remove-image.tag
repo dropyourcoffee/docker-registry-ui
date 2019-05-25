@@ -37,7 +37,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
           registryUI.taglist.go(name);
           if (this.status == 200) {
             if (!this.hasHeader('Docker-Content-Digest')) {
-              registryUI.errorSnackbar('You need to add Access-Control-Expose-Headers: [\'Docker-Content-Digest\'] in your server configuration.');
+              registryUI.errorSnackbar('Access-Control-Expose-Headers: [\'Docker-Content-Digest\'] 설정이 필요합니다.');
               return;
             }
             const digest = this.getResponseHeader('Docker-Content-Digest');

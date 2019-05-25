@@ -19,7 +19,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
   <material-card ref="catalog-tag" class="catalog">
     <div class="material-card-title-action">
       <h2>
-        Repositories of { registryUI.name() }
+        Image 저장소 { registryUI.name() }
         <div class="item-count">{ registryUI.catalog.length } images</div>
       </h2>
     </div>
@@ -52,7 +52,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
             return acc;
           }, []);
         } else if (this.status == 404) {
-          registryUI.snackbar('Server not found', true);
+          registryUI.snackbar('Server를 찾을 수 없습니다.', true);
         } else {
           registryUI.snackbar(this.responseText);
         }
