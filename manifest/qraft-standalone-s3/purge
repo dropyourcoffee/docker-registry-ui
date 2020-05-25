@@ -1,10 +1,10 @@
 #!/bin/bash
 
-docker stop qraft-standalone-s3_web_1
+docker stop qraft-standalones3_web_1
 
-docker stop qraft-standalone-s3_registry_1
+docker stop qraft-standalones3_registry_1
 
-docker stop qraft-standalone-s3_imgrepos_1
+docker stop qraft-standalones3_imgrepos_1
 
 
 docker-compose rm
